@@ -16,7 +16,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
 }
 
-export function InputWithLabel(props: InputProps) {
+function InputWithLabel(props: InputProps) {
   return (
     <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor={props.id}>{props.label}</Label>
