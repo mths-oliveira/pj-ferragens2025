@@ -8,8 +8,6 @@ import { usePageData } from "@/hooks/use-page-data";
 
 // tempo de cache do Next.js em segundos, equivalente a 1 dia
 export const revalidate = 24 * 60 * 60;
-// quando false, retorna error 404 se não encontrar o id
-export const dynamicParams = false;
 
 export const generateStaticParams = async () => {
   const { pageDataList } = await usePageData();
